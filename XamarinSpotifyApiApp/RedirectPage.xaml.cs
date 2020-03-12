@@ -27,21 +27,26 @@ namespace XamarinSpotifyApiApp
         protected override async void OnAppearing()
         {
             base.OnAppearing();
-            redirectLabel.Text = redirectUri;
+            //redirectLabel.Text = redirectUri;
             Token token = await Methods.GetToken(Client.GetClientID(), Client.GetClientSecret(), redirectUri);
-            redirectLabel.Text = token.Access_token;
+            //redirectLabel.Text = token.Access_token;
 
             _token = token;
         }
 
         public async void OnButtonClicked(object sender, EventArgs e)
         {
+            IList<PagingTracks> passOn = new List<PagingTracks>();
             string[] input = { "short_term", "medium_term", "long_term" };
             foreach(string item in input)
             {
                 await Methods.MakePlaylist(item, _token.Access_token);
                 redirectLabel.Text = item;
+                passOn.Add(await Methods.GetTopTracks(_token.Access_token, item));
+
             }
+            App.Current.MainPage = new ViewTracksPage(passOn);
+
         }
 
     }

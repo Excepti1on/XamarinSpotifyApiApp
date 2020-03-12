@@ -4,7 +4,7 @@ using System.Text;
 
 namespace XamarinSpotifyApiApp.WebApi
 {
-    class External_URL
+    public class External_URL
     {
         public string Spotify { get; set; }
     }

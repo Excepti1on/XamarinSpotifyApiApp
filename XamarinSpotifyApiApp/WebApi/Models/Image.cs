@@ -4,7 +4,7 @@ using System.Text;
 
 namespace XamarinSpotifyApiApp.WebApi
 {
-    class Image
+    public class Image
     {
         private int height;
 

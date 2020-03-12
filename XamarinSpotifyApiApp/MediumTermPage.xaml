@@ -4,8 +4,8 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="XamarinSpotifyApiApp.ShortTermPage"
-             Title="Short Term">
+             x:Class="XamarinSpotifyApiApp.MediumTermPage"
+             Title="Medium Term">
     <ContentPage.Content>
         <StackLayout>
             <ListView ItemsSource="{Binding Tracks}"

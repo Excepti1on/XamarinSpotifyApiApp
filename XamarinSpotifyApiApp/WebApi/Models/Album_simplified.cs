@@ -4,7 +4,7 @@ using System.Text;
 
 namespace XamarinSpotifyApiApp.WebApi
 {
-    class Album_simplified
+    public class Album_simplified
     {
         public string Album_type { get; set; }
 

@@ -13,12 +13,12 @@ using Xamarin.Forms.Xaml;
 namespace XamarinSpotifyApiApp
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ShortTermPage : ContentPage
+    public partial class LongTermPage : ContentPage
     {
         public AudioPlayerViewModel MyAudioPlayerViewModel { get; set; }
 
         public IList<Track> Tracks { get; set; }
-        public ShortTermPage(PagingTracks pagingTracks)
+        public LongTermPage(PagingTracks pagingTracks)
         {
 
 

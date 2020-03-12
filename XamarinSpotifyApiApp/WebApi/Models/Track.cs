@@ -4,7 +4,7 @@ using System.Text;
 
 namespace XamarinSpotifyApiApp.WebApi
 {
-    class Track : object
+    public class Track : object
     {
         public Album_simplified Album { get; set; }
         public List<Artist_simplified> Artists { get; set; }

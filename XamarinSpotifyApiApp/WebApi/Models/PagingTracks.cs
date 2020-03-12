@@ -4,7 +4,7 @@ using System.Text;
 
 namespace XamarinSpotifyApiApp.WebApi
 {
-    class PagingTracks
+    public class PagingTracks
     {
         public string Href { get; set; }
         public int Limit { get; set; }

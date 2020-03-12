@@ -4,14 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="XamarinSpotifyApiApp.ViewTracksPage"
-            xmlns:pages="clr-namespace:XamarinSpotifyApiApp">
-  <!--Pages can be added as references or inline-->
-    <pages:ShortTermPage/>
-    <ContentPage Title="Medium Term">
-        
-    </ContentPage>
-    <ContentPage Title="Long Term">
-        
-    </ContentPage>
+             x:Class="XamarinSpotifyApiApp.ViewTracksPage">
+    <!--Pages can be added as references or inline-->
+
 </TabbedPage>

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace XamarinSpotifyApiApp.WebApi
 {
-    class Artist_simplified
+    public class Artist_simplified
     {
         public External_URL External_urls { get; set; }
         public string Href { get; set; }
