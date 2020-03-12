@@ -32,22 +32,18 @@ namespace XamarinSpotifyApiApp
             //redirectLabel.Text = token.Access_token;
 
             _token = token;
-        }
 
-        public async void OnButtonClicked(object sender, EventArgs e)
-        {
             IList<PagingTracks> passOn = new List<PagingTracks>();
             string[] input = { "short_term", "medium_term", "long_term" };
-            foreach(string item in input)
+            foreach (string item in input)
             {
                 await Methods.MakePlaylist(item, _token.Access_token);
-                redirectLabel.Text = item;
                 passOn.Add(await Methods.GetTopTracks(_token.Access_token, item));
 
             }
             App.Current.MainPage = new ViewTracksPage(passOn);
-
         }
+
 
     }
 }

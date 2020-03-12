@@ -7,12 +7,9 @@
              x:Class="XamarinSpotifyApiApp.RedirectPage">
     <ContentPage.Content>
         <StackLayout Margin="100,100,100,100">
-            <Label Text="Redirected!!!"
-                   Margin="0,0,0,0"/>
-            <Label Text="placeholder"
-                   x:Name="redirectLabel"/>
-            <Button Text="Get Top Tracks"
-                    Clicked="OnButtonClicked"/>
+            <Label Text="Creating your playlists"
+                   Margin="0,0,0,0"
+                   FontSize="Large"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

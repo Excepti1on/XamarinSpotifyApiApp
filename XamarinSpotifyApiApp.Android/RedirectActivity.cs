@@ -37,7 +37,6 @@ namespace XamarinSpotifyApiApp.Droid
                 }
             }
             this.FinishActivity(0);
-            var data = Intent?.Data?.EncodedAuthority;
 
             // Create your application here
             //await Xamarin.Forms.Application.Current.MainPage.Navigation.PushAsync(new RedirectPage());
