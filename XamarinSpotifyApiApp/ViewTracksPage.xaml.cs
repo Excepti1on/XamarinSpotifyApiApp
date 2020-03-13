@@ -19,7 +19,7 @@ namespace XamarinSpotifyApiApp
             passOn.Remove(passOn.First());
             Children.Add(new MediumTermPage(passOn.First()));
             passOn.Remove(passOn.First());
-            Children.Add(new MediumTermPage(passOn.First()));
+            Children.Add(new LongTermPage(passOn.First()));
 
         }
     }
